@@ -3,7 +3,17 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebase : {
+    apiKey: "AIzaSyBhxOVSt2XqqF96juIYG1A1z6ncSJNrzQE",
+    authDomain: "jsus-take-the-chat.firebaseapp.com",
+    databaseURL: "https://jsus-take-the-chat.firebaseio.com",
+    projectId: "jsus-take-the-chat",
+    storageBucket: "",
+    messagingSenderId: "559873702002",
+    appId: "1:559873702002:web:5badd1e97428c065e72aeb",
+    measurementId: "G-PC26369TNC"
+  }
 };
 
 /*
