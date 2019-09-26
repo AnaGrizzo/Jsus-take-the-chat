@@ -22,8 +22,17 @@ export class AppComponent {
     private splashScreen: SplashScreen,
     private statusBar: StatusBar
   ) {
+    console.log("Aqui 3");
     this.items = db.list("items").valueChanges();
+    console.log("Aqui 4");
     this.initializeApp();
+  }
+
+  onSubmit() {
+    console.log("Aqui");
+    this.db.list("items").push({ content: this.itemValue });
+    this.itemValue = "";
+    console.log("Aqui 2");
   }
 
   initializeApp() {
